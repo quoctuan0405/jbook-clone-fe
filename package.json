@@ -1,0 +1,45 @@
+{
+  "name": "solidjs-in-browser-bundling",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.23.6",
+    "@babel/standalone": "^7.23.6",
+    "@babel/traverse": "^7.23.6",
+    "@thisbeyond/solid-dnd": "^0.7.5",
+    "@toast-ui/editor": "^3.2.2",
+    "axios": "^1.6.2",
+    "babel-preset-solid": "^1.8.6",
+    "esbuild-wasm": "^0.19.10",
+    "localforage": "^1.10.0",
+    "lodash": "^4.17.21",
+    "monaco-editor": "^0.45.0",
+    "monaco-jsx-highlighter": "^2.0.4",
+    "prettier": "^3.1.1",
+    "solid-js": "^1.8.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/babel__helper-module-imports": "^7.18.3",
+    "@types/babel__standalone": "^7.1.7",
+    "@types/lodash": "^4.14.202",
+    "@types/uuid": "^9.0.7",
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^4.4.23",
+    "dts-bundle-generator": "^9.0.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.7",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vite-plugin-node-polyfills": "^0.17.0",
+    "vite-plugin-solid": "^2.8.0"
+  }
+}

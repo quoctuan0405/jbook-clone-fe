@@ -1,0 +1,8 @@
+In order for Monaco Editor to support typescript, we probably need to write our own bundler for .d.ts file.
+ESBuild somehow refuse to bundle .d.ts file.
+How to write your own bundler in just 100 lines of code: https://www.youtube.com/watch?v=Gc9-7PBqOC8
+
+Tailwind CDN: https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio
+Check out how to implement Tailwind JIT: https://github.com/beyondcode/tailwindcss-jit-cdn
+
+Fix strange TS typing: https://github.com/gxmari007/vite-plugin-eslint/pull/60/files#diff-8b4a10961bf384b8ef4355cd5867d07a675d6194ec644352b026facfc9b4f14e
