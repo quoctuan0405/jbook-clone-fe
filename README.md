@@ -1,6 +1,8 @@
 # Jbook clone SolidJS
 
-Frontend part from [React and Typescript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/) by [Stephen Grider](https://www.udemy.com/user/sgslo/) but use [SolidJS](https://www.solidjs.com/). Check it out here.
+Frontend part from [React and Typescript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/) by [Stephen Grider](https://www.udemy.com/user/sgslo/) but use [SolidJS](https://www.solidjs.com/). Check it out [here](https://jbook-clone-fe-mbmk-ls7dk9hpl-quoctuan0405.vercel.app/). 
+
+*Please patiently wait for a while for the huge Javascript file to load. I do not use any SSR for the sake of simplicity.*
 
 **Huge shout out for Stephen Grider for creating such an awesome course :tada::tada::tada:**
 
