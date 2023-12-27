@@ -7,6 +7,7 @@ import {
   untrack,
 } from "solid-js";
 import { useAppSelector } from "../store";
+// @ts-ignore
 import Editor from "@toast-ui/editor";
 import type { ThemeType } from "../store/theme";
 
