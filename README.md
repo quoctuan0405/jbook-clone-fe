@@ -42,8 +42,9 @@ You probably get this error:
 
 > ✘ [ERROR] Request failed with status code 404 [plugin fetch-plugin]
 
-    a:index.jsx:2:23:
-      2 │ import { render } from "solid-js/web";
+> a:index.jsx:2:23:
+
+> 2 │ import { render } from "solid-js/web";
 
 <br>
 
@@ -106,7 +107,7 @@ Why did we use Solid but have a 'React is not defined' error?
 
 ### Solid plugin for ESBuild
 
-If you print out the compile code, you'll see this line at the very bottom:
+If you print out the compiled code, you'll see this line at the very bottom:
 
 ```js
 render(
@@ -199,7 +200,7 @@ build.onLoad({ filter: /\.(t|j)sx$/ }, async (args) => {
         ...
 ```
 
-This plugin try to read content from user's file then use another compiler called [babel-preset-solid](https://www.npmjs.com/package/babel-preset-solid) to compile it.
+This plugin try to read content from user's file using fs module then use another compiler called [babel-preset-solid](https://www.npmjs.com/package/babel-preset-solid) to compile it.
 
 **But we can't access the file system (fs, path,... module) from the browser. That's why we see such cryptic errors.**
 
@@ -421,7 +422,7 @@ Now it's [Skypack](https://www.skypack.dev/) turn can't find react-dom/client???
 
 If you go to https://unpkg.com/browse/react-dom@17.0.1, turns out React DOM version 17.0.1 does not the client.js file or client folder. So why Skypack mistakingly redirect us to React DOM version 17.0.1?
 
-Turns out that since a lot of legacy application still import React from Skypack without specify version, so Skypack lock React and React DOM to version 17 to prevent breaking change. Read more about it [here](https://github.com/skypackjs/skypack-cdn/issues/88).
+Since a lot of legacy application still import React from Skypack without specify version, so Skypack lock React and React DOM to version 17 to prevent breaking change. Read more about it [here](https://github.com/skypackjs/skypack-cdn/issues/88).
 
 So how about we specify React version when import using Skypack?
 
@@ -696,6 +697,7 @@ I understand that you have lot of important stuff do do like `solid-start` but I
 
 > I hope you have fun, I know I did _(not)_
 
-**Josh from Let's game it out**, _[italic and (not) is mine]_
+**Josh from Let's game it out**, <br/>
+_[italic and the word (not) is mine]_
 
 [Outro music of LGIO](https://www.youtube.com/watch?v=Mf9WroOPCwI)
